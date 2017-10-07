@@ -1,13 +1,12 @@
 import {getThemeSource}  from './index';
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import ics_theme from './ics_theme';
 
 describe('locales', () => {
 
   it('should return theme source', () => {
     expect(
-      getThemeSource('ics')
-    ).toEqual(ics_theme)
+      getThemeSource('light')
+    ).toEqual(lightBaseTheme)
   })
 
   it('should return default theme on wrong input', () => {
